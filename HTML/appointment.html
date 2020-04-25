@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="shortcut icon" href="https://cdn2.iconfinder.com/data/icons/medical-services/256/Hospital-512.png" />
+  <title>Book Appointment</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Alata" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/reset.css" />
+  <link type="text/css" rel="stylesheet" href="../assets/css/root.css" />
+  <link type="text/css" rel="stylesheet" href="../assets/css/myStyles.css" />
+
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Navigation Bar-->
+  <nav id="nav">
+    <div class="picContainer">
+      <img onclick="window.location.href='/HTML/index.html'"
+        src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg" alt="logo" />
+    </div>
+    <i id="bars" class="fa fa-bars active"></i>
+    <ul id="list" class="list">
+      <li><a href="doctor.html"> Doctors</a></li>
+      <li><a href="hospital.html"> Hospitals</a></li>
+      <li><a href="treatment.html"> Treatment</a></li>
+      <li><a href="contactUs.html"> Other Services</a></li>
+      <li><a href="aboutUs.html"> About</a></li>
+    </ul>
+    <div class="end">
+      <button id="loginButton">Login / Sign Up</button>
+      <button id="quoteButton">Get a Quote</button>
+    </div>
+    <div class="sideBar">
+      <ul class="lists">
+        <li><a href="doctor.html"> Doctors</a></li>
+        <li><a href="hospital.html"> Hospitals</a></li>
+        <li><a href="treatment.html"> Treatment</a></li>
+        <li><a href="contactUs.html">Contact Us</a></li>
+        <li><a href="aboutUs.html"> About</a></li>
+        <li><a href="#" id="loginButton">Log In/Sign Up</a></li>
+        <li><a href="#" id="quoteButton">Get a Quote</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="appointment formContainer">
+    <form action="" class="appointmentForm">
+      <h1>Book an Appointment</h1>
+      <div class="allInputs">
+        <div class="item item1">
+          <h3>Select Appointment Date*</h3>
+          <div class="inputContainer dateContainer">
+            <input type="date" name="dateTime" id="" />
+          </div>
+        </div>
+        <div class="item item2">
+          <h3>Time Internal*</h3>
+          <div class="inputContainer radioContainer">
+            <input type="radio" name="time" id="Morning" value="Morning" /><label for="Morning">Morning</label>
+            <input type="radio" name="time" id="Afternoon" value="Afternoon" /><label for="Afternoon">Afternoon</label>
+            <input type="radio" name="time" id="Evening" value="Evening" /><label for="Evening">Evening</label>
+          </div>
+        </div>
+        <div class="item item3">
+          <h3>Appointment Status/Urgency*</h3>
+          <div class="inputContainer radioContainer">
+            <input type="radio" name="status" id="Routine" value="Routine" /><label for="Routine">Routine
+              Check-up</label>
+            <input type="radio" name="status" id="Non-Urgent" value="Non-Urgent" /><label for="Non-Urgent">Non Urgent
+              Check-up</label>
+            <input type="radio" name="status" id="Urgent" value="Urgent" /><label for="Urgent">Urgent Check-up</label>
+            <input type="radio" name="status" id="Surgical" value="Surgical" /> <label for="Surgical">Surgical
+              Apponitment</label>
+          </div>
+        </div>
+        <div class="item item4">
+          <h3>Upload Previous Health Record*</h3>
+          <div class="inputContainer fileContainer">
+            <input type="file" id="" />
+          </div>
+        </div>
+        <div class="item item5">
+          <h3>Appointment Details*</h3>
+          <div class="inputContainer txtareaContainer appointmentTxtareaContainer">
+            <textarea name="details" id="" cols="30" rows="5"></textarea>
+          </div>
+        </div>
+        <div class="item item6">
+          <div class="btnContainer">
+            <button class="btn"><span>BOOK APPOINTMENT</span>
+              <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </section>
+  <footer class="footer2">
+    <p>All Rights Reserved &copy; Tvastra 2020</p>
+  </footer>
+</body>
+<script type="text/javascript" src="../assets/scripts/nevBar.js"></script>
+
+</html>

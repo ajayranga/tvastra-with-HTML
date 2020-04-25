@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn2.iconfinder.com/data/icons/medical-services/256/Hospital-512.png"
+    />
+    <title>Sign Up</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Alata"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="../assets/css/reset.css" />
+    <link type="text/css" rel="stylesheet" href="../assets/css/root.css" />
+    <link type="text/css" rel="stylesheet" href="../assets/css/myStyles.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Navigation Bar-->
+    <nav id="nav">
+      <div class="picContainer">
+        <img
+          onclick="window.location.href='/HTML/index.html'"
+          src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg"
+          alt="logo"
+        />
+      </div>
+      <i id="bars" class="fa fa-bars active"></i>
+      <ul id="list" class="list">
+        <li><a href="doctor.html"> Doctors</a></li>
+        <li><a href="hospital.html"> Hospitals</a></li>
+        <li><a href="treatment.html"> Treatment</a></li>
+        <li><a href="contactUs.html"> Other Services</a></li>
+        <li><a href="aboutUs.html"> About</a></li>
+      </ul>
+      <div class="end">
+        <button id="loginButton">Login / Sign Up</button>
+        <button id="quoteButton">Get a Quote</button>
+      </div>
+      <div class="sideBar">
+        <ul class="lists">
+          <li><a href="doctor.html"> Doctors</a></li>
+          <li><a href="hospital.html"> Hospitals</a></li>
+          <li><a href="treatment.html"> Treatment</a></li>
+          <li><a href="contactUs.html">Contact Us</a></li>
+          <li><a href="aboutUs.html"> About</a></li>
+          <li><a href="#" id="loginButton">Log In/Sign Up</a></li>
+          <li><a href="#" id="quoteButton">Get a Quote</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="signup formContainer">
+      <form action="" type="post" class="signupForm">
+        <h1>Sign Up</h1>
+        <div class="allInputs">
+          <div class="inputContainer">
+            <input type="text" placeholder="Enter Name" />
+          </div>
+          <div class="inputContainer">
+            <input type="text" placeholder="Enter Email" />
+          </div>
+          <div class="inputContainer">
+            <input type="password" placeholder="Enter Password" />
+          </div>
+          <div class="inputContainer">
+            <select name="gender" id="gender">
+              <option value="" disabled selected hidden
+                >Select your gender</option
+              >
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="inputContainer">
+            <input type="date" name="dateTime" id="" />
+          </div>
+          <div class="inputContainer">
+            <input type="text" placeholder="Enter Phone Number" />
+          </div>
+          <div class="addr">
+            <div class="inputContainer">
+              <input type="text" placeholder="Enter City" />
+            </div>
+            <div class="inputContainer">
+              <input type="text" placeholder="Enter State" />
+            </div>
+          </div>
+          <div class="inputContainer">
+            <select name="Country" id="Country">
+              <option value="" disabled selected hidden
+                >Select your Country</option
+              >
+              <option value="India">India</option>
+              <option value="Pakistan">Pakistan</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="btnContainer">
+            <button class="btn">
+              <span>SIGN UP</span> <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+        <span class="txt"
+          >Already Registered?<a href="login.html">Login</a></span
+        >
+      </form>
+    </section>
+    <footer class="footer2">
+      <p>All Rights Reserved &copy; Tvastra 2020</p>
+    </footer>
+  </body>
+  <script type="text/javascript" src="../assets/scripts/nevBar.js"></script>
+</html>

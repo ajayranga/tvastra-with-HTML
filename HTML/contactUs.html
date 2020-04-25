@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn2.iconfinder.com/data/icons/medical-services/256/Hospital-512.png"
+    />
+    <title>Contact Us</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Alata"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="../assets/css/reset.css" />
+    <link type="text/css" rel="stylesheet" href="../assets/css/root.css" />
+    <link type="text/css" rel="stylesheet" href="../assets/css/myStyles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Navigation Bar-->
+    <nav id="nav">
+      <div class="picContainer">
+        <img
+          onclick="window.location.href='/HTML/index.html'"
+          src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg"
+          alt="logo"
+        />
+      </div>
+      <i id="bars" class="fa fa-bars active"></i>
+      <ul id="list" class="list">
+        <li><a href="doctor.html"> Doctors</a></li>
+        <li><a href="hospital.html"> Hospitals</a></li>
+        <li><a href="treatment.html"> Treatment</a></li>
+        <li><a href="contactUs.html"> Other Services</a></li>
+        <li><a href="aboutUs.html"> About</a></li>
+      </ul>
+      <div class="end">
+        <button id="loginButton">Login / Sign Up</button>
+        <button id="quoteButton">Get a Quote</button>
+      </div>
+      <div class="sideBar">
+        <ul class="lists">
+          <li><a href="doctor.html"> Doctors</a></li>
+          <li><a href="hospital.html"> Hospitals</a></li>
+          <li><a href="treatment.html"> Treatment</a></li>
+          <li><a href="contactUs.html">Contact Us</a></li>
+          <li><a href="aboutUs.html"> About</a></li>
+          <li><a href="#" id="loginButton">Log In/Sign Up</a></li>
+          <li><a href="#" id="quoteButton">Get a Quote</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="hero heroContact">
+      <div class="text">
+        <h1>Contact Us</h1>
+        <span>Home / Contact Us</span>
+      </div>
+    </section>
+
+    <section class="mainContactPage">
+      <div class="map" id="map"></div>
+      <ul class="data">
+        <li>
+          <i class="fas fa-home"></i>
+          <h3>Noida, India</h3>
+          <span>Sector 45</span>
+        </li>
+        <li>
+          <i class="fas fa-phone-alt"></i>
+          <h3>00(440)9865562</h3>
+          <span>Mon to Fri 9am to 6pm</span>
+        </li>
+        <li>
+          <i class="fas fa-home"></i>
+          <h3>support@tvastra.com</h3>
+          <span>Send us any query anytime</span>
+        </li>
+      </ul>
+      <form action="" type="post" class="message">
+        <div class="allInputs">
+          <div class="inputContainer" id="input1">
+            <input type="text" placeholder="Enter Your Name" />
+          </div>
+          <div class="inputContainer" id="input2">
+            <input type="text" placeholder="Enter Email address" />
+          </div>
+          <div class="inputContainer" id="input3">
+            <input type="text" placeholder="Enter Subject" />
+          </div>
+          <div class="inputContainer txtareaContainer" id="input4">
+            <textarea
+              name="message"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Enter Message"
+            ></textarea>
+          </div>
+          <div class="btnContainer" id="button1">
+            <button>Send Message</button>
+          </div>
+        </div>
+      </form>
+    </section>
+    <!--Footer Section-->
+
+    <footer>
+      <div class="picContainer">
+        <img
+          onclick="window.location.href='/HTML/index.html'"
+          src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/footer.png"
+          alt="logo"
+        />
+      </div>
+      <ul class="menu">
+        <li><a href="doctor.html"> Doctors</a></li>
+        <li><a href="hospital.html"> Hospitals</a></li>
+        <li><a href="treatment.html"> Treatment</a></li>
+        <li><a href="contactUs.html">Contact Us</a></li>
+        <li><a href="faq.html"> FAQs</a></li>
+      </ul>
+      <ul class="icn">
+        <li>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-google-plus-g"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </li>
+      </ul>
+      <p class="footer">All Rights Reserved. &copy; tvastra 2018</p>
+    </footer>
+  </body>
+  <script type="text/javascript" src="../assets/scripts/nevBar.js"></script>
+  <script>
+    var map, marker;
+
+    function initMap() {
+      map = new google.maps.Map(document.getElementById("map"), {
+        center: {
+          lat: 28.5260526,
+          lng: 77.3866258,
+        },
+        zoom: 13,
+      });
+      marker = new google.maps.Marker({
+        position: {
+          lat: 28.5260526,
+          lng: 77.3866258,
+        },
+        map: map,
+      });
+    }
+  </script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsKJ_26cV1y7M4fR4LrxjvScGAPzPWGTk&callback=initMap"
+    async
+    defer
+  ></script>
+</html>
