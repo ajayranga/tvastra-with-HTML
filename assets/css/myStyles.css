@@ -2054,12 +2054,25 @@ footer .footer {
 .formContainer form .allInputs .inputContainer i {
   position: absolute;
   right: 1rem;
-  top: 0.5rem;
+  top: 0.8rem;
   color: grey;
   font-size: 1.4rem;
 }
 
-.formContainer form .allInputs .appointmentTxtareaContainer textarea, .formContainer form .allInputs .queryTxtareaContainer textarea {
+.formContainer form .allInputs .inputContainer .showPassword i {
+  color: #3d82ff;
+}
+
+.formContainer form .allInputs .inputContainer .showPassword .enabled {
+  display: block;
+}
+
+.formContainer form .allInputs .inputContainer .showPassword .disabled {
+  display: none;
+}
+
+.formContainer form .allInputs .appointmentTxtareaContainer textarea,
+.formContainer form .allInputs .queryTxtareaContainer textarea {
   border: 0.1rem solid #cccccc;
 }
 
@@ -2072,6 +2085,20 @@ footer .footer {
           column-gap: 0.5rem;
 }
 
+.formContainer form .allInputs .linkContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.formContainer form .allInputs .linkContainer span a {
+  color: #3d82ff;
+  font-family: nexa-bold;
+}
+
 .formContainer form .allInputs .btnContainer .btn {
   width: 100%;
   display: -webkit-box;
@@ -2080,7 +2107,7 @@ footer .footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0.5rem 1rem 0.5rem 40%;
+  padding: 0.2rem 1rem 0.2rem 40%;
 }
 
 .formContainer form .allInputs .btnContainer .btn span,
@@ -2149,7 +2176,9 @@ footer .footer {
   font-family: nexa-bold;
 }
 
-.signup, .appointment, .query {
+.signup,
+.appointment,
+.query {
   padding: 2rem 1rem;
 }
 
@@ -2157,7 +2186,9 @@ footer .footer {
   .formContainer {
     padding: 20%;
   }
-  .signup, .appointment, .query {
+  .signup,
+  .appointment,
+  .query {
     padding: 3rem 20%;
   }
 }
@@ -2169,7 +2200,8 @@ footer .footer {
   .formContainer form h1 {
     font-size: 2.3rem;
   }
-  .signup, .appointment {
+  .signup,
+  .appointment {
     padding: 4rem 35%;
   }
   .query {
