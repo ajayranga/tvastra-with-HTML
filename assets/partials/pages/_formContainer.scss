@@ -17,6 +17,39 @@
       grid-template-columns: auto;
       row-gap: 0.3rem;
       text-align: left;
+      .otpPara{
+        text-align: center;
+      }
+      .otpInputContainer{
+        padding: 0 4rem;
+        display: flex;
+        justify-content: space-between;
+        .inputContainer{
+          input.otpInput{
+            border:  0;
+            border-bottom: 0.1rem solid $lightBlue;
+            width: 12vw;
+            padding-left: 40%;
+            padding-bottom: 0.3rem;
+            &:focus{
+              border:  0;
+              border-bottom: 0.1rem solid $lightBlue;
+              box-shadow: none;
+              outline: none;
+            }
+          }
+        }        
+      }
+      .countdown{
+        text-align: center;
+        color: $lightBlue;
+        font-family: nexa-bold;
+        .seconds{
+          display: inline-block;
+          color: $lightBlue;
+          font-family: nexa-bold;
+        }
+      }
       .inputContainer {
         input,
         select {

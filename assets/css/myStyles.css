@@ -2010,6 +2010,48 @@ footer .footer {
   text-align: left;
 }
 
+.formContainer form .allInputs .otpPara {
+  text-align: center;
+}
+
+.formContainer form .allInputs .otpInputContainer {
+  padding: 0 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.formContainer form .allInputs .otpInputContainer .inputContainer input.otpInput {
+  border: 0;
+  border-bottom: 0.1rem solid #3d82ff;
+  width: 12vw;
+  padding-left: 40%;
+  padding-bottom: 0.3rem;
+}
+
+.formContainer form .allInputs .otpInputContainer .inputContainer input.otpInput:focus {
+  border: 0;
+  border-bottom: 0.1rem solid #3d82ff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+.formContainer form .allInputs .countdown {
+  text-align: center;
+  color: #3d82ff;
+  font-family: nexa-bold;
+}
+
+.formContainer form .allInputs .countdown .seconds {
+  display: inline-block;
+  color: #3d82ff;
+  font-family: nexa-bold;
+}
+
 .formContainer form .allInputs .inputContainer {
   position: relative;
 }
