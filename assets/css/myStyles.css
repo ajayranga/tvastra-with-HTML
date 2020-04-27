@@ -2019,16 +2019,16 @@ footer .footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .formContainer form .allInputs .otpInputContainer .inputContainer input.otpInput {
   border: 0;
   border-bottom: 0.1rem solid #3d82ff;
-  width: 12vw;
-  padding-left: 40%;
+  width: 7vw;
+  padding-left: 10%;
   padding-bottom: 0.3rem;
 }
 
@@ -2141,6 +2141,12 @@ footer .footer {
   font-family: nexa-bold;
 }
 
+.formContainer form .allInputs .phoneLoginLinkContainer {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .formContainer form .allInputs .btnContainer .btn {
   width: 100%;
   display: -webkit-box;
@@ -2241,6 +2247,10 @@ footer .footer {
   }
   .formContainer form h1 {
     font-size: 2.3rem;
+  }
+  .formContainer form .allInputs .otpInputContainer .inputContainer input.otpInput {
+    width: 3vw;
+    padding-left: 1rem;
   }
   .signup,
   .appointment {
@@ -2897,8 +2907,8 @@ section.choosePlan .container {
   text-align: center;
   padding: 2rem 1rem 0 1rem;
   margin-top: -12.5rem;
-  -webkit-box-shadow: inset 0 0 0.2rem grey;
-          box-shadow: inset 0 0 0.2rem grey;
+  -webkit-box-shadow: 0rem 0.5rem 0.5rem grey;
+          box-shadow: 0rem 0.5rem 0.5rem grey;
   overflow: hidden;
   border-radius: 0.3rem;
 }
@@ -2914,7 +2924,10 @@ section.choosePlan .container .plans .plan {
 section.choosePlan .container .plans .plan .feature {
   border-top: 0.06rem solid #cccccc;
   padding: 1rem 2rem 0 2rem;
-  height: 20rem;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  min-height: 16rem;
 }
 
 section.choosePlan .container .plans .plan .price span {
@@ -3323,6 +3336,7 @@ section.review .reviewList .item .container .btnContainer button.btn {
 @media only screen and (min-width: 768px) {
   section.choosePlan {
     padding: 2rem;
+    padding-bottom: 5rem;
   }
   section.choosePlan .container .plans {
     display: -ms-grid;
@@ -3434,11 +3448,13 @@ section.review .reviewList .item .container .btnContainer button.btn {
   section.choosePlan .container {
     margin-top: -15rem;
     padding: 0;
+    padding-top: 2rem;
     -webkit-box-shadow: 0 0 3rem grey;
             box-shadow: 0 0 3rem grey;
   }
   section.choosePlan .container .plans {
     border-top: none;
+    padding-top: 1rem;
   }
   section.choosePlan .container .plans .plan {
     padding: 1rem 5rem 4rem 5rem;

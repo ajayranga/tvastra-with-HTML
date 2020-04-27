@@ -6,7 +6,7 @@ section.choosePlan {
     text-align: center;
     padding: 2rem 1rem 0 1rem;
     margin-top: -12.5rem;
-    box-shadow: inset 0 0 0.2rem grey;
+    box-shadow: 0rem 0.5rem 0.5rem grey;
     overflow: hidden;
     border-radius: 0.3rem;
     .plans {
@@ -16,7 +16,8 @@ section.choosePlan {
         .feature {
           border-top: 0.06rem solid $lightGrey;
           padding: 1rem 2rem 0 2rem;
-          height: 20rem;
+          height: max-content;
+          min-height: 16rem;
         }
         .price {
           span {
@@ -342,6 +343,7 @@ section.review {
 @media only screen and (min-width: 768px) {
   section.choosePlan {
     padding: 2rem;
+    padding-bottom: 5rem;
     .container {
       .plans {
         display: grid;
@@ -437,9 +439,11 @@ section.review {
     .container {
       margin-top: -15rem;
       padding: 0;
+      padding-top: 2rem;
       box-shadow: 0 0 3rem grey;
       .plans {
         border-top: none;
+        padding-top: 1rem;
         .plan {
           padding: 1rem 5rem 4rem 5rem;
           .feature {

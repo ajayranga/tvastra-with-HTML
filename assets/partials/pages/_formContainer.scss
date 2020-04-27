@@ -17,34 +17,34 @@
       grid-template-columns: auto;
       row-gap: 0.3rem;
       text-align: left;
-      .otpPara{
+      .otpPara {
         text-align: center;
       }
-      .otpInputContainer{
+      .otpInputContainer {
         padding: 0 4rem;
         display: flex;
-        justify-content: space-between;
-        .inputContainer{
-          input.otpInput{
-            border:  0;
+        justify-content: space-evenly;
+        .inputContainer {
+          input.otpInput {
+            border: 0;
             border-bottom: 0.1rem solid $lightBlue;
-            width: 12vw;
-            padding-left: 40%;
+            width: 7vw;
+            padding-left: 10%;
             padding-bottom: 0.3rem;
-            &:focus{
-              border:  0;
+            &:focus {
+              border: 0;
               border-bottom: 0.1rem solid $lightBlue;
               box-shadow: none;
               outline: none;
             }
           }
-        }        
+        }
       }
-      .countdown{
+      .countdown {
         text-align: center;
         color: $lightBlue;
         font-family: nexa-bold;
-        .seconds{
+        .seconds {
           display: inline-block;
           color: $lightBlue;
           font-family: nexa-bold;
@@ -108,6 +108,9 @@
             font-family: nexa-bold;
           }
         }
+      }
+      .phoneLoginLinkContainer{
+        justify-content: center;
       }
       .btnContainer {
         .btn {
@@ -195,6 +198,16 @@
     form {
       h1 {
         font-size: 2.3rem;
+      }
+      .allInputs {
+        .otpInputContainer {
+          .inputContainer {
+            input.otpInput {
+              width: 3vw;
+              padding-left: 1rem;
+            }
+          }
+        }
       }
     }
   }
