@@ -56,13 +56,15 @@
             <h1>Email Login</h1>
             <div class="allInputs">
                 <div class="inputContainer">
-                    <input type="email" class="mn" placeholder="Enter Email Address" />
+                    <input type="text" placeholder="Enter Email Address" id="emailInput" onpaste="return false"
+                        oncopy="return false" required />
                 </div>
                 <div class="inputContainer">
-                    <input type="password" placeholder="Enter Password" />
-                    <div class="showPassword">
-                        <i class="fas fa-eye enabled"></i>
-                        <i class="fas fa-eye-slash disabled"></i>
+                    <input type="password" placeholder="Enter Password" id="passwordInput" onpaste="return false"
+                        oncopy="return false" minlength="8" maxlength="16" required />
+                    <div class="showPassword" id="showPassword">
+                        <i class="fas fa-eye disabled" id="show"></i>
+                        <i class="fas fa-eye-slash enabled" id="hide"></i>
                     </div>
                 </div>
                 <div class="linkContainer">
@@ -83,5 +85,6 @@
     </footer>
 </body>
 <script type="text/javascript" src="../assets/scripts/nevBar.js"></script>
+<script type="text/javascript" src="../assets/scripts/validation.js"></script>
 
 </html>
