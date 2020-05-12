@@ -65,7 +65,7 @@ async function allEventListeners() {
 
     if (dateInput) {
         await dateInput.addEventListener("focusout", () => {
-            borderChanger(parseInt(dateInput.value.split("-")[0]) > 2005 || dateInput.value === "", dateInput);
+            borderChanger(parseInt(dateInput.value.split("-")[0]) > 2010 || dateInput.value === "", dateInput);
         })
     }
 

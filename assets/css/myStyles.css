@@ -3527,4 +3527,146 @@ section.review .reviewList .item .container .btnContainer button.btn {
         grid-template-columns: auto auto auto;
   }
 }
+
+.errorToaster, .toaster {
+  position: absolute;
+  top: 5rem;
+  right: 0.5rem;
+  background-color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3rem 9rem 3rem;
+      grid-template-columns: 3rem 9rem 3rem;
+  border-left: 0.2rem solid red;
+  padding: 0.3rem 0;
+  -webkit-animation: animation1 3s ease-in;
+          animation: animation1 3s ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.errorToaster .col1,
+.errorToaster .col3, .toaster .col1,
+.toaster .col3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.errorToaster .col1 i,
+.errorToaster .col3 i, .toaster .col1 i,
+.toaster .col3 i {
+  font-size: 1.8rem;
+  color: red;
+}
+
+.errorToaster .col3 i, .toaster .col3 i {
+  color: grey;
+}
+
+.errorToaster .col2 h3,
+.errorToaster .col2 span, .toaster .col2 h3,
+.toaster .col2 span {
+  color: red;
+}
+
+.errorToaster .col2 span, .toaster .col2 span {
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1rem;
+}
+
+.errorToaster .col2 h3, .toaster .col2 h3 {
+  font-size: 1rem;
+  margin: 0;
+  margin-bottom: 0.2rem;
+}
+
+.successToaster {
+  border-left: 0.2rem solid green;
+}
+
+.successToaster .col1 i, .successToaster .col2 i, .successToaster .col2 i {
+  color: green;
+}
+
+.successToaster .col1 h3, .successToaster .col1 span, .successToaster .col2 h3, .successToaster .col2 span, .successToaster .col2 h3, .successToaster .col2 span {
+  color: green;
+}
+
+@-webkit-keyframes animation1 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes animation1 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .errorToaster {
+    -ms-grid-columns: 4rem 15rem 4rem;
+        grid-template-columns: 4rem 15rem 4rem;
+    border-left: 0.3rem solid red;
+    padding: 0.7rem;
+  }
+  .errorToaster .col1 i,
+  .errorToaster .col2 i {
+    font-size: 2.2rem;
+  }
+  .errorToaster .col2 h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  .errorToaster .col2 span {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .errorToaster {
+    -ms-grid-columns: 4rem 15rem 4rem;
+        grid-template-columns: 4rem 15rem 4rem;
+    top: 9rem;
+    right: 1rem;
+    border-left: 0.3rem solid red;
+    padding: 0.7rem;
+  }
+  .errorToaster .col1 i,
+  .errorToaster .col2 i {
+    font-size: 2.2rem;
+  }
+  .errorToaster .col2 h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  .errorToaster .col2 span {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+  }
+}
 /*# sourceMappingURL=myStyles.css.map */
