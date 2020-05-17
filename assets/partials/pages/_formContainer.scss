@@ -88,6 +88,17 @@
           }
         }
       }
+      .isDoctorContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0.5rem 0;
+        label{
+          font-family: nexa-bold;
+          margin-left: 0.5rem;
+          color: $lightBlue;
+        }
+      }
       .appointmentTxtareaContainer,
       .queryTxtareaContainer {
         textarea {
@@ -109,7 +120,7 @@
           }
         }
       }
-      .phoneLoginLinkContainer{
+      .phoneLoginLinkContainer {
         justify-content: center;
       }
       .btnContainer {

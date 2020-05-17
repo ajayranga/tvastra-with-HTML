@@ -1,11 +1,8 @@
 nav {
   padding: 1rem;
   display: grid;
+  z-index: 9999;
   grid-template-columns: auto 3rem;
-  .list,
-  .end {
-    display: none;
-  }
   .picContainer {
     width: 8rem;
     height: 2rem;
@@ -20,14 +17,97 @@ nav {
     justify-self: end;
     margin: auto 0;
   }
-
-  .sideBar {
-    display: none;
-    .lists {
-      text-align: center;
-      li {
-        padding: 0.2rem;
+  ul.list {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 9999;
+    width: 60vw;
+    right: 0;
+    top: 4rem;
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 1rem;
+    li {
+      display: flex;
+      height: 2.5rem;
+      width: 100%;
+      border-bottom: 0.04rem solid #000;
+      justify-content: center;
+      align-items: center;
+      a {
+        font-size: 1.25rem;
       }
+    }
+  }
+  .end {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 9999;
+    top: 17.5rem;
+    right: 0;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    background-color: whitesmoke;
+    width: 60vw;
+    button {
+      border: 0;
+      color: $darkBlue;
+      background: none;
+      padding: 0;
+      font-size: 1.25rem;
+      font-family: nexa-light;
+      border-bottom: 0.04rem solid black;
+      display: flex;
+      height: 2.5rem;
+      width: 100%;
+      border-bottom: 0.04rem solid #000;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  ul.disable,
+  div.disable {
+    animation: myAnim2 1s ease;
+    animation-fill-mode: forwards;
+    display: none;
+  }
+  ul.enable,
+  div.enable {
+    display: flex;
+    animation: myAnim 1s ease;
+    animation-fill-mode: forwards;
+  }
+  @keyframes myAnim {
+    0% {
+      right: -60%;
+      visibility: hidden;
+    }
+    1% {
+      right: -60%;
+      visibility: visible;
+    }
+    100% {
+      right: 0;
+      visibility: visible;
+    }
+  }
+  @keyframes myAnim2 {
+    0% {
+      right: 0;
+      visibility: visible;
+      opacity: 1;
+    }
+    99% {
+      right: -60%;
+      visibility: visible;
+      opacity: 1;
+    }
+    100% {
+      right: -60%;
+      visibility: hidden;
+      opacity: 0;
     }
   }
 }
@@ -38,6 +118,14 @@ nav {
     .picContainer {
       height: 2.5rem;
     }
+    ul.list {
+      top: 4.5rem;
+      width: 40%;
+    }
+    div.end {
+      top: 18rem;
+      width: 40%;
+    }
   }
 }
 
@@ -45,43 +133,55 @@ nav {
   nav {
     padding: $deskPadding;
     display: grid;
-    grid-template-columns: 15% auto 20%;
+    grid-template-columns: 15% auto 21%;
+    #bars {
+      display: none;
+    }
     .picContainer {
-      height: 4rem;
+      height: 3.5rem;
       width: 100%;
-      img{
+      img {
         width: 100%;
         height: 100%;
         object-fit: contain;
       }
     }
-    .list {
-      display: flex;
-      justify-content: center;
-      li {
-        align-self: center;
-        padding: 0 1rem;
+    ul.list,
+    div.end {
+      flex-direction: row;
+      justify-content: space-between;
+      position: unset;
+      opacity: 1;
+      visibility: visible;
+      background-color: unset;
+      width: unset;
+      padding: 0;
+      li,
+      button {
+        border: 0;
       }
     }
-
-    .fa,
-    .sideBar {
-      display: none;
-    }
-
-    .end {
-      grid-column: 3/4;
-      display: grid;
-      grid-template-columns: auto auto;
-      column-gap: 1rem;
-
+    div.end {
       button {
         @include navBtn();
-      }
-
-      :nth-child(odd) {
-        background-color: white;
+        border: 0.08rem solid $darkBlue;
         color: $darkBlue;
+        padding: 1.1rem;
+        font-size: 1rem;
+        border-radius: 0.3rem;
+        width: unset;
+        height: unset;
+      }
+      #quoteButton {
+        background-color: $darkBlue;
+        color: #fff;
+      }
+    }
+    ul.list {
+      justify-content: center;
+      li {
+        width: unset;
+        margin: 0 3%;
       }
     }
   }
