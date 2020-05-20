@@ -1,4 +1,5 @@
-.errorToaster,.toaster {
+.errorToaster,
+.toaster {
   position: absolute;
   top: 5rem;
   right: 0.5rem;
@@ -41,14 +42,16 @@
     }
   }
 }
-.successToaster{
-
+.successToaster {
   border-left: 0.2rem solid green;
-  .col1,.col2,.col2{
-    i{
+  .col1,
+  .col2,
+  .col2 {
+    i {
       color: green;
     }
-    h3,span{
+    h3,
+    span {
       color: green;
     }
   }
@@ -57,7 +60,7 @@
   0% {
     opacity: 1;
   }
-  50% {
+  80% {
     opacity: 0.5;
   }
   100% {

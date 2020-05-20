@@ -1,82 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="shortcut icon"
-      href="https://cdn2.iconfinder.com/data/icons/medical-services/256/Hospital-512.png"
-    />
-    <title>Login</title>
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Alata"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" href="../assets/css/reset.css" />
-    <link type="text/css" rel="stylesheet" href="../assets/css/root.css" />
-    <link type="text/css" rel="stylesheet" href="../assets/css/myStyles.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="shortcut icon" href="https://cdn2.iconfinder.com/data/icons/medical-services/256/Hospital-512.png" />
+  <title>Login</title>
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-  </head>
+  <link href="https://fonts.googleapis.com/css?family=Alata" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/reset.css" />
+  <link type="text/css" rel="stylesheet" href="../assets/css/root.css" />
+  <link type="text/css" rel="stylesheet" href="../assets/css/myStyles.css" />
 
-  <body>
-    <!-- Navigation Bar-->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Navigation Bar-->
   <nav id="nav">
     <div class="picContainer">
-        <img onclick="window.location.href='/HTML/index.html'"
-            src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg" alt="logo" />
+      <img onclick="window.location.href='/HTML/index.html'"
+        src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg" alt="logo" />
     </div>
-    <i id="bars" class="fa fa-bars active"></i>
-    <ul id="list" class="list disable">
-        <li><a href="doctor.html"> Doctors</a></li>
-        <li><a href="hospital.html"> Hospitals</a></li>
-        <li><a href="treatment.html"> Treatment</a></li>
-        <li><a href="contactUs.html"> Other Services</a></li>
-        <li><a href="aboutUs.html"> About</a></li>
+    <i id="bars" class="fa fa-bars"></i>
+    <ul id="list" class="list">
+      <li><a href="doctor.html"> Doctors</a></li>
+      <li><a href="hospital.html"> Hospitals</a></li>
+      <li><a href="treatment.html"> Treatment</a></li>
+      <li><a href="aboutUs.html"> About</a></li>
     </ul>
     <div class="end disable">
-        <button id="loginButton">Login / Sign Up</button>
-        <button id="quoteButton">Get a Quote</button>
+      <button id="loginButton">Login / Sign Up</button>
+      <button id="quoteButton">Get a Quote</button>
     </div>
-</nav>
+    <div class="navbar2">
+      <ul class="sideBar">
+        <li class="item"> <a href="doctor.html"> Doctors</a></li>
+        <li class="item"> <a href="hospital.html"> Hospitals</a></li>
+        <li class="item"> <a href="treatment.html"> Treatment</a></li>
+        <li class="item"> <a href="aboutUs.html"> About</a></li>
+        <li class="item"> <a href="emailLogin.html">Login/Sign Up</a></li>
+        <li class="item"> <a href="quote">Get a Quote</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <section class="login formContainer">
-      <form action="" class="login_form">
-        <h1>Login</h1>
-        <div class="allInputs">
-          <div class="inputContainer">
-            <input type="text" class="mn" placeholder="Enter Mobile Number" />
-            <i class="fas fa-question-circle"></i>
-          </div>
-          <div class="inputContainer">
-            <input type="password" placeholder="Enter OTP" />
-          </div>
-          <div class="btnContainer">
-            <button class="btn">
-              <span>LOGIN</span><i class="fas fa-arrow-right"></i>
-            </button>
-          </div>
+  <section class="login formContainer">
+    <form action="" class="login_form">
+      <h1>Login</h1>
+      <div class="allInputs">
+        <div class="inputContainer">
+          <input type="text" class="mn" placeholder="Enter Mobile Number" />
+          <i class="fas fa-question-circle"></i>
         </div>
-        <span class="txt">Not Register?<a href="signup.html">Sign Up</a></span>
-      </form>
-    </section>
-    <footer class="footer2">
-      <p>All Rights Reserved &copy; Tvastra 2020</p>
-    </footer>
-  </body>
-  <script type="text/javascript" src="../assets/scripts/nevBar.js"></script>
+        <div class="inputContainer">
+          <input type="password" placeholder="Enter OTP" />
+        </div>
+        <div class="btnContainer">
+          <button class="btn">
+            <span>LOGIN</span><i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+      <span class="txt">Not Register?<a href="signup.html">Sign Up</a></span>
+    </form>
+  </section>
+  <footer class="footer2">
+    <p>All Rights Reserved &copy; Tvastra 2020</p>
+  </footer>
+</body>
+<script type="text/javascript" src="../assets/scripts/nevBar.js"></script>
+
 </html>
