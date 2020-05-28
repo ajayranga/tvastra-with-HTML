@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn2.iconfinder.com/data/icons/medical-services/256/Hospital-512.png"
+    />
+    <title>Doctor Details</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Alata"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="../assets/css/reset.css" />
+    <link type="text/css" rel="stylesheet" href="../assets/css/root.css" />
+    <link type="text/css" rel="stylesheet" href="../assets/css/myStyles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Navigation Bar-->
+    <nav id="nav">
+      <div class="picContainer">
+        <img
+          onclick="window.location.href='/HTML/index.html'"
+          src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg"
+          alt="logo"
+        />
+      </div>
+      <i id="bars" class="fa fa-bars active"></i>
+      <ul id="list" class="list disable">
+        <li><a href="doctor.html"> Doctors</a></li>
+        <li><a href="hospital.html"> Hospitals</a></li>
+        <li><a href="treatment.html"> Treatment</a></li>
+        <li><a href="contactUs.html"> Other Services</a></li>
+        <li><a href="aboutUs.html"> About</a></li>
+      </ul>
+      <div class="end disable">
+        <button id="loginButton">Login / Sign Up</button>
+        <button id="quoteButton">Get a Quote</button>
+      </div>
+    </nav>
+    <section class="formContainer addDoctor">
+      <form action="" type="post" class="addDoctorForm">
+        <h1>Welcome Dr. Ajay</h1>
+        <p class="abt">
+          Complete your profile to access the site.
+        </p>
+        <div class="allInputs">
+          <div class="labelContainer">
+            <label for="descriptionInput">Describe yourself</label>
+          </div>
+          <div class="inputContainer">
+            <textarea
+              name="descriptionInput"
+              id="descriptionInput"
+              cols="30"
+              rows="5"
+              placeholder="How do you describe yourself...."
+            ></textarea>
+          </div>
+          <div class="labelContainer">
+            <label for="uploadPicInput">Upload Your Profile Picture </label>
+          </div>
+          <div class="inputContainer">
+            <input type="file" name="uploadPicInput" id="uploadPicInput" />
+          </div>
+          <div class="labelContainer">
+            <label for="achievementsInput">Achievements </label>
+          </div>
+          <div class="inputContainer">
+            <input
+              type="text"
+              placeholder="Your Achievements.."
+              name="achievementsInput"
+              id="achievementsInput"
+            />
+          </div>
+          <div class="labelContainer">
+            <label for="experienceInput">Years of Experiences </label>
+          </div>
+          <div class="inputContainer">
+            <input
+              type="text"
+              placeholder="Your Years of Experiences (in Number).."
+              name="experienceInput"
+              id="experienceInput"
+            />
+          </div>
+          <div class="labelContainer">
+            <label for="qualificationsInput">Qualifications </label>
+          </div>
+          <div class="inputContainer">
+            <input
+              type="text"
+              placeholder="Your Qualifications.."
+              name="qualificationsInput"
+              id="qualificationsInput"
+            />
+          </div>
+          <div class="labelContainer">
+            <label for="awardsInput">Awards (if any) </label>
+          </div>
+          <div class="inputContainer">
+            <input
+              type="text"
+              placeholder="Your Awards (if any).."
+              name="awardsInput"
+              id="awardsInput"
+            />
+          </div>
+          <div class="labelContainer">
+            <label for="specializationsInput">Yours Specializations </label>
+          </div>
+          <div class="inputContainer">
+            <input
+              type="text"
+              placeholder="Yours Specializations.."
+              name="specializationsInput"
+              id="specializationsInput"
+            />
+          </div>
+          <div class="labelContainer">
+            <label for="feesInput">Yours Average Fees </label>
+          </div>
+          <div class="inputContainer">
+            <input
+              type="text"
+              placeholder="Yours Average Fees (in rs) .."
+              name="feesInput"
+              id="feesInput"
+            />
+          </div>
+          <div class="btnContainer">
+            <button class="btn" type="submit" id="submitButton">
+              <span>SUBMIT</span> <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </section>
+    <footer class="footer2">
+      <p>All Rights Reserved &copy; Tvastra 2020</p>
+    </footer>
+  </body>
+  <script type="text/javascript" src="../assets/scripts/nevBar.js"></script>
+</html>

@@ -50,6 +50,13 @@
           font-family: nexa-bold;
         }
       }
+      .labelContainer {
+        label {
+          color: $lightBlue;
+          font-family: nexa-bold;
+          font-size: 1rem;
+        }
+      }
       .inputContainer {
         input,
         select {
@@ -60,6 +67,9 @@
             font-family: nexa-bold;
           }
         }
+        textarea {
+          border: 0.1rem solid $lightGrey;
+        }
         select {
           font-size: 1rem;
           color: silver;
@@ -67,6 +77,12 @@
           option {
             color: silver;
           }
+        }
+        input[type="file"] {
+          padding-left: 0;
+          border: 0;
+          font-family: nexa-bold;
+          color: grey;
         }
         position: relative;
         i {
@@ -88,12 +104,12 @@
           }
         }
       }
-      .isDoctorContainer{
+      .isDoctorContainer {
         display: flex;
         align-items: center;
         justify-content: center;
         margin: 0.5rem 0;
-        label{
+        label {
           font-family: nexa-bold;
           margin-left: 0.5rem;
           color: $lightBlue;
@@ -188,7 +204,8 @@
 }
 .signup,
 .appointment,
-.query {
+.query,
+.addDoctor {
   padding: 2rem 1rem;
 }
 
@@ -198,7 +215,8 @@
   }
   .signup,
   .appointment,
-  .query {
+  .query,
+  .addDoctor {
     padding: 3rem 20%;
   }
 }
@@ -223,7 +241,8 @@
     }
   }
   .signup,
-  .appointment {
+  .appointment,
+  .addDoctor {
     padding: 4rem 35%;
   }
   .query {

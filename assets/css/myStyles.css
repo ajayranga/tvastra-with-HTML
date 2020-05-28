@@ -2219,6 +2219,12 @@ footer .footer {
   font-family: nexa-bold;
 }
 
+.formContainer form .allInputs .labelContainer label {
+  color: #3d82ff;
+  font-family: nexa-bold;
+  font-size: 1rem;
+}
+
 .formContainer form .allInputs .inputContainer {
   position: relative;
 }
@@ -2250,6 +2256,10 @@ footer .footer {
   font-family: nexa-bold;
 }
 
+.formContainer form .allInputs .inputContainer textarea {
+  border: 0.1rem solid #cccccc;
+}
+
 .formContainer form .allInputs .inputContainer select {
   font-size: 1rem;
   color: silver;
@@ -2258,6 +2268,13 @@ footer .footer {
 
 .formContainer form .allInputs .inputContainer select option {
   color: silver;
+}
+
+.formContainer form .allInputs .inputContainer input[type=file] {
+  padding-left: 0;
+  border: 0;
+  font-family: nexa-bold;
+  color: grey;
 }
 
 .formContainer form .allInputs .inputContainer i {
@@ -2412,7 +2429,7 @@ footer .footer {
 
 .signup,
 .appointment,
-.query {
+.query, .addDoctor {
   padding: 2rem 1rem;
 }
 
@@ -2422,7 +2439,7 @@ footer .footer {
   }
   .signup,
   .appointment,
-  .query {
+  .query, .addDoctor {
     padding: 3rem 20%;
   }
 }
@@ -2439,7 +2456,7 @@ footer .footer {
     padding-left: 1rem;
   }
   .signup,
-  .appointment {
+  .appointment, .addDoctor {
     padding: 4rem 35%;
   }
   .query {
@@ -3714,7 +3731,8 @@ section.review .reviewList .item .container .btnContainer button.btn {
   }
 }
 
-.errorToaster, .toaster {
+.errorToaster,
+.toaster {
   position: absolute;
   top: 5rem;
   right: 0.5rem;
@@ -3732,7 +3750,8 @@ section.review .reviewList .item .container .btnContainer button.btn {
 }
 
 .errorToaster .col1,
-.errorToaster .col3, .toaster .col1,
+.errorToaster .col3,
+.toaster .col1,
 .toaster .col3 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3746,29 +3765,34 @@ section.review .reviewList .item .container .btnContainer button.btn {
 }
 
 .errorToaster .col1 i,
-.errorToaster .col3 i, .toaster .col1 i,
+.errorToaster .col3 i,
+.toaster .col1 i,
 .toaster .col3 i {
   font-size: 1.8rem;
   color: red;
 }
 
-.errorToaster .col3 i, .toaster .col3 i {
+.errorToaster .col3 i,
+.toaster .col3 i {
   color: grey;
 }
 
 .errorToaster .col2 h3,
-.errorToaster .col2 span, .toaster .col2 h3,
+.errorToaster .col2 span,
+.toaster .col2 h3,
 .toaster .col2 span {
   color: red;
 }
 
-.errorToaster .col2 span, .toaster .col2 span {
+.errorToaster .col2 span,
+.toaster .col2 span {
   font-size: 0.9rem;
   margin: 0;
   line-height: 1rem;
 }
 
-.errorToaster .col2 h3, .toaster .col2 h3 {
+.errorToaster .col2 h3,
+.toaster .col2 h3 {
   font-size: 1rem;
   margin: 0;
   margin-bottom: 0.2rem;
@@ -3778,11 +3802,18 @@ section.review .reviewList .item .container .btnContainer button.btn {
   border-left: 0.2rem solid green;
 }
 
-.successToaster .col1 i, .successToaster .col2 i, .successToaster .col2 i {
+.successToaster .col1 i,
+.successToaster .col2 i,
+.successToaster .col2 i {
   color: green;
 }
 
-.successToaster .col1 h3, .successToaster .col1 span, .successToaster .col2 h3, .successToaster .col2 span, .successToaster .col2 h3, .successToaster .col2 span {
+.successToaster .col1 h3,
+.successToaster .col1 span,
+.successToaster .col2 h3,
+.successToaster .col2 span,
+.successToaster .col2 h3,
+.successToaster .col2 span {
   color: green;
 }
 
@@ -3790,7 +3821,7 @@ section.review .reviewList .item .container .btnContainer button.btn {
   0% {
     opacity: 1;
   }
-  50% {
+  80% {
     opacity: 0.5;
   }
   100% {
@@ -3803,7 +3834,7 @@ section.review .reviewList .item .container .btnContainer button.btn {
   0% {
     opacity: 1;
   }
-  50% {
+  80% {
     opacity: 0.5;
   }
   100% {
