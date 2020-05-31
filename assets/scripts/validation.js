@@ -11,22 +11,33 @@ const showPassword = document.getElementById("showPassword");
 const show = document.getElementById("show");
 const hide = document.getElementById("hide");
 
-showPassword.addEventListener("click", () => {
-    if (show.classList.contains("disabled")) {
-        show.classList.remove("disabled");
-        show.classList.add("enabled");
-        hide.classList.remove("enabled");
-        hide.classList.add("disabled");
-        passwordInput.type = "text";
-    }
-    else {
-        show.classList.remove("enabled");
-        show.classList.add("disabled");
-        hide.classList.remove("disabled");
-        hide.classList.add("enabled");
-        passwordInput.type = "password";
-    }
-})
+// const descriptionInput = document.getElementById("descriptionInput");
+// const uploadPicInput = document.getElementById("uploadPicInput");
+// const achievementsInput = document.getElementById("achievementsInput");
+// const experienceInput = document.getElementById("experienceInput");
+// const qualificationsInput = document.getElementById("qualificationsInput");
+// const awardsInput = document.getElementById("awardsInput");
+// const specializationsInput = document.getElementById("specializationsInput");
+// const averageFeesInput = document.getElementById("averageFeesInput");
+
+if (showPassword) {
+    showPassword.addEventListener("click", () => {
+        if (show.classList.contains("disabled")) {
+            show.classList.remove("disabled");
+            show.classList.add("enabled");
+            hide.classList.remove("enabled");
+            hide.classList.add("disabled");
+            passwordInput.type = "text";
+        }
+        else {
+            show.classList.remove("enabled");
+            show.classList.add("disabled");
+            hide.classList.remove("disabled");
+            hide.classList.add("enabled");
+            passwordInput.type = "password";
+        }
+    })
+}
 
 
 function borderChanger(x, elem) {
@@ -88,3 +99,7 @@ async function allEventListeners() {
     }
 }
 allEventListeners();
+
+descriptionInput.addEventListener("focusout", () => {
+    console.log(descriptionInput.value)
+}, false)

@@ -56,11 +56,15 @@ button.plus {
 
 nav {
   padding: 1rem;
-  display: -ms-grid;
-  display: grid;
-  z-index: 9999;
-  -ms-grid-columns: auto 3rem;
-      grid-template-columns: auto 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 nav .picContainer {
@@ -75,173 +79,55 @@ nav .picContainer img {
      object-fit: contain;
 }
 
-nav #bars {
-  -ms-grid-column-align: end;
-      justify-self: end;
-  margin: auto 0;
-}
-
-nav ul.list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: absolute;
-  z-index: 9999;
-  width: 60vw;
-  right: 0;
-  top: 4rem;
-  text-align: center;
-  background-color: whitesmoke;
-  padding: 1rem;
-}
-
-nav ul.list li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 2.5rem;
-  width: 100%;
-  border-bottom: 0.04rem solid #000;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-nav ul.list li a {
-  font-size: 1.25rem;
-}
-
+nav ul.list,
 nav .end {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: absolute;
-  z-index: 9999;
-  top: 17.5rem;
-  right: 0;
-  text-align: center;
-  padding: 0.5rem 1rem;
-  background-color: whitesmoke;
-  width: 60vw;
-}
-
-nav .end button {
-  border: 0;
-  color: #021433;
-  background: none;
-  padding: 0;
-  font-size: 1.25rem;
-  font-family: nexa-light;
-  border-bottom: 0.04rem solid black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 2.5rem;
-  width: 100%;
-  border-bottom: 0.04rem solid #000;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-nav ul.disable,
-nav div.disable {
-  -webkit-animation: myAnim2 1s ease;
-          animation: myAnim2 1s ease;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
   display: none;
 }
 
-nav ul.enable,
-nav div.enable {
+nav .sidebar {
+  background-color: whitesmoke;
+  position: absolute;
+  right: 0;
+  z-index: 9;
+  top: 4rem;
+  width: 60%;
+  height: 100vh;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+nav .sidebar .item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-animation: myAnim 1s ease;
-          animation: myAnim 1s ease;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0.5rem;
 }
 
-@-webkit-keyframes myAnim {
-  0% {
-    right: -60%;
-    visibility: hidden;
-  }
-  1% {
-    right: -60%;
-    visibility: visible;
-  }
-  100% {
-    right: 0;
-    visibility: visible;
-  }
+nav .sidebar .item a,
+nav .sidebar .item span {
+  font-size: 1.5rem;
+  margin: 0;
 }
 
-@keyframes myAnim {
-  0% {
-    right: -60%;
-    visibility: hidden;
-  }
-  1% {
-    right: -60%;
-    visibility: visible;
-  }
-  100% {
-    right: 0;
-    visibility: visible;
-  }
+nav .sidebar .treatmentItem {
+  position: relative;
 }
 
-@-webkit-keyframes myAnim2 {
-  0% {
-    right: 0;
-    visibility: visible;
-    opacity: 1;
-  }
-  99% {
-    right: -60%;
-    visibility: visible;
-    opacity: 1;
-  }
-  100% {
-    right: -60%;
-    visibility: hidden;
-    opacity: 0;
-  }
+nav .sidebar .treatmentItem i.fas {
+  position: absolute;
+  top: 0.85rem;
+  left: 9.5rem;
 }
 
-@keyframes myAnim2 {
-  0% {
-    right: 0;
-    visibility: visible;
-    opacity: 1;
-  }
-  99% {
-    right: -60%;
-    visibility: visible;
-    opacity: 1;
-  }
-  100% {
-    right: -60%;
-    visibility: hidden;
-    opacity: 0;
-  }
+nav .sidebar .treatmentItem .treatmentsMenu .treatmentsMenuItem {
+  padding: 0.3rem 1rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -251,34 +137,34 @@ nav div.enable {
   nav .picContainer {
     height: 2.5rem;
   }
-  nav ul.list {
+  nav .sidebar {
     top: 4.5rem;
-    width: 40%;
-  }
-  nav div.end {
-    top: 18rem;
-    width: 40%;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   nav {
     padding: 2rem 5rem 2rem 8.5rem;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 15% auto 21%;
-        grid-template-columns: 15% auto 21%;
+    padding-right: 10rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
-  nav #bars {
+  nav #bars,
+  nav .sidebar {
     display: none;
+  }
+  nav ul.list,
+  nav .end {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   nav .picContainer {
     height: 3.5rem;
-    width: 100%;
+    width: 14rem;
   }
   nav .picContainer img {
-    width: 100%;
-    height: 100%;
     -o-object-fit: contain;
        object-fit: contain;
   }
@@ -291,47 +177,137 @@ nav div.enable {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    position: unset;
-    opacity: 1;
-    visibility: visible;
-    background-color: unset;
-    width: unset;
-    padding: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   nav ul.list li,
-  nav ul.list button,
-  nav div.end li,
-  nav div.end button {
-    border: 0;
+  nav div.end li {
+    position: relative;
+    margin: 0 1rem;
+  }
+  nav ul.list li i.fas,
+  nav div.end li i.fas {
+    position: absolute;
+    top: 1.3rem;
+    left: 7rem;
+    color: gray;
+  }
+  nav ul.list li .treatmentsMenu,
+  nav div.end li .treatmentsMenu {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    top: 3rem;
+    left: -3rem;
+    text-align: center;
+    background-color: whitesmoke;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    border-radius: 0.5rem;
+  }
+  nav ul.list li .treatmentsMenu li,
+  nav div.end li .treatmentsMenu li {
+    padding: 0.4rem 0;
+  }
+  nav ul.list li .treatmentsMenu li:hover,
+  nav div.end li .treatmentsMenu li:hover {
+    background-color: white;
+  }
+  nav ul.list .treatmentItem:hover .treatmentsMenu,
+  nav div.end .treatmentItem:hover .treatmentsMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   nav div.end button {
     color: #021433;
-    border: 0.08rem solid #021433;
-    padding: 1.1rem 0rem;
+    padding: 2rem 0rem;
     font-size: 1.1rem;
     border-radius: 0.3rem;
     font-family: nexa-light;
     color: white;
-    border: 0.08rem solid #021433;
-    color: #021433;
-    padding: 1.1rem;
-    font-size: 1rem;
-    border-radius: 0.3rem;
-    width: unset;
-    height: unset;
+    padding: 1.1rem 3rem;
+    font-weight: 600;
+    margin: 0 0.4rem;
   }
   nav div.end #quoteButton {
     background-color: #021433;
-    color: #fff;
   }
-  nav ul.list {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  nav div.end #tvastraPlusButton {
+    background-color: #3b7abd;
   }
-  nav ul.list li {
-    width: unset;
-    margin: 0 3%;
+  nav div.end .profile {
+    margin-left: 1.5rem;
+    position: relative;
+  }
+  nav div.end .profile .userName {
+    color: #021433;
+  }
+  nav div.end .profile i.fas {
+    position: absolute;
+    top: 1.3rem;
+    left: 3.2rem;
+  }
+  nav div.end .profile .profileMenu {
+    display: none;
+    position: absolute;
+    right: -2rem;
+    background-color: white;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  nav div.end .profile .profileMenu .dashboard {
+    border: 0.008rem solid #cccccc;
+    display: -ms-grid;
+    display: grid;
+    padding: 0.5rem;
+    -ms-grid-columns: 3.5rem 12rem;
+        grid-template-columns: 3.5rem 12rem;
+    -webkit-column-gap: 1rem;
+            column-gap: 1rem;
+  }
+  nav div.end .profile .profileMenu .dashboard .picContainer {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 0.2rem;
+  }
+  nav div.end .profile .profileMenu .dashboard .picContainer img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  nav div.end .profile .profileMenu .dashboard h4 {
+    color: #3b7abd;
+  }
+  nav div.end .profile .profileMenu .dashboard span {
+    margin: 0;
+    font-size: 1rem;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  nav div.end .profile .profileMenu .menuItems {
+    padding-top: 0.5rem;
+  }
+  nav div.end .profile .profileMenu .menuItems li {
+    padding: 1rem;
+    margin: 0;
+  }
+  nav div.end .profile .profileMenu .menuItems li:hover {
+    background-color: whitesmoke;
+  }
+  nav div.end .profile:hover .profileMenu {
+    display: block;
   }
 }
 
@@ -2270,7 +2246,7 @@ footer .footer {
   color: silver;
 }
 
-.formContainer form .allInputs .inputContainer input[type=file] {
+.formContainer form .allInputs .inputContainer input[type="file"] {
   padding-left: 0;
   border: 0;
   font-family: nexa-bold;
@@ -2429,7 +2405,8 @@ footer .footer {
 
 .signup,
 .appointment,
-.query, .addDoctor {
+.query,
+.addDoctor {
   padding: 2rem 1rem;
 }
 
@@ -2439,7 +2416,8 @@ footer .footer {
   }
   .signup,
   .appointment,
-  .query, .addDoctor {
+  .query,
+  .addDoctor {
     padding: 3rem 20%;
   }
 }
@@ -2456,7 +2434,8 @@ footer .footer {
     padding-left: 1rem;
   }
   .signup,
-  .appointment, .addDoctor {
+  .appointment,
+  .addDoctor {
     padding: 4rem 35%;
   }
   .query {

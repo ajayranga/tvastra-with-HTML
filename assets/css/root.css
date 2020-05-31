@@ -67,6 +67,7 @@ input[type="text"],
 input[type="password"],
 input[type="date"],
 input[type="email"],
+input[type="number"],
 input[type="tel"],
 select,
 textarea {
@@ -134,6 +135,11 @@ button {
     line-height: 2rem;
     font-family: sans-serif;
     font-weight: bolder;
+  }
+  h4 {
+    font-size: 1.3rem;
+    font-family: nexa-bold;
+    color: gray;
   }
   p,
   span {
