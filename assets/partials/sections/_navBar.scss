@@ -2,7 +2,15 @@ nav {
   padding: 1rem;
   display: flex;
   justify-content: space-between;
+<<<<<<< HEAD
   align-items: center;
+=======
+  .navbar2,
+  .list,
+  .end {
+    display: none;
+  }
+>>>>>>> 3fb0d31ff02ba213cabb10a962a937973bfc7104
   .picContainer {
     width: 8rem;
     height: 2rem;
@@ -12,6 +20,7 @@ nav {
       object-fit: contain;
     }
   }
+<<<<<<< HEAD
 
   ul.list,
   .end {
@@ -20,9 +29,22 @@ nav {
   .sidebar {
     background-color: whitesmoke;
     position: absolute;
+=======
+  #bars {
+    justify-self: end;
+    margin: auto 0;
+  }
+  .navbar2 {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    z-index: 999;
+    width: 60vw;
+>>>>>>> 3fb0d31ff02ba213cabb10a962a937973bfc7104
     right: 0;
     z-index: 9;
     top: 4rem;
+<<<<<<< HEAD
     width: 60%;
     height: 100vh;
     display: none;
@@ -48,20 +70,51 @@ nav {
         // display: none;
         .treatmentsMenuItem {
           padding: 0.3rem 1rem;
+=======
+    height: 100%;
+    background-color: whitesmoke;
+    padding: 1rem;
+    transition: width 2s;
+    .sideBar {
+      li {
+        display: flex;
+        height: 2.5rem;
+        width: 100%;
+        border-bottom: 0.04rem solid #000;
+        align-items: center;
+        a {
+          font-size: 1.25rem;
+        }
+        &:hover {
+          background-color: lightblue;
+>>>>>>> 3fb0d31ff02ba213cabb10a962a937973bfc7104
         }
       }
     }
   }
 }
-
 @media only screen and (min-width: 768px) {
   nav {
     padding: 1rem 2rem;
     .picContainer {
       height: 2.5rem;
     }
+<<<<<<< HEAD
     .sidebar {
       top: 4.5rem;
+=======
+    .navbar2 {
+      width: 50%;
+      top: 4.5rem;
+      .sideBar {
+        li {
+          padding: 1.5krtrem 0rem;
+          a {
+            font-size: 1.5rem;
+          }
+        }
+      }
+>>>>>>> 3fb0d31ff02ba213cabb10a962a937973bfc7104
     }
   }
 }
@@ -87,8 +140,10 @@ nav {
     }
     ul.list,
     div.end {
+      display: flex;
       flex-direction: row;
       justify-content: space-between;
+<<<<<<< HEAD
       align-items: center;
       li {
         position: relative;
@@ -119,6 +174,18 @@ nav {
       }
       .treatmentItem:hover .treatmentsMenu {
         display: flex;
+=======
+      position: unset;
+      opacity: 1;
+      visibility: visible;
+      background-color: unset;
+      width: unset;
+      padding: 0;
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+>>>>>>> 3fb0d31ff02ba213cabb10a962a937973bfc7104
       }
     }
     div.end {
@@ -128,8 +195,24 @@ nav {
         font-weight: 600;
         margin: 0 0.4rem;
       }
+      :nth-child(odd) {
+        color: $darkBlue;
+        background-color: white;
+        &:hover {
+          background-color: $darkBlue;
+          color: #fff;
+        }
+      }
       #quoteButton {
         background-color: $darkBlue;
+<<<<<<< HEAD
+=======
+        color: #fff;
+        &:hover {
+          background-color: white;
+          color: $darkBlue;
+        }
+>>>>>>> 3fb0d31ff02ba213cabb10a962a937973bfc7104
       }
       #tvastraPlusButton {
         background-color: $lightIvory;

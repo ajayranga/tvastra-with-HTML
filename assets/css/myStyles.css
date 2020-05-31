@@ -62,9 +62,18 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+<<<<<<< HEAD
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+=======
+}
+
+nav .navbar2,
+nav .list,
+nav .end {
+  display: none;
+>>>>>>> 3fb0d31ff02ba213cabb10a962a937973bfc7104
 }
 
 nav .picContainer {
@@ -84,6 +93,7 @@ nav .end {
   display: none;
 }
 
+<<<<<<< HEAD
 nav .sidebar {
   background-color: whitesmoke;
   position: absolute;
@@ -92,11 +102,15 @@ nav .sidebar {
   top: 4rem;
   width: 60%;
   height: 100vh;
+=======
+nav .navbar2 {
+>>>>>>> 3fb0d31ff02ba213cabb10a962a937973bfc7104
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+<<<<<<< HEAD
 }
 
 nav .sidebar .item {
@@ -128,6 +142,38 @@ nav .sidebar .treatmentItem i.fas {
 
 nav .sidebar .treatmentItem .treatmentsMenu .treatmentsMenuItem {
   padding: 0.3rem 1rem;
+=======
+  position: absolute;
+  z-index: 999;
+  width: 60vw;
+  right: 0;
+  top: 4rem;
+  height: 100%;
+  background-color: whitesmoke;
+  padding: 1rem;
+  -webkit-transition: width 2s;
+  transition: width 2s;
+}
+
+nav .navbar2 .sideBar li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 2.5rem;
+  width: 100%;
+  border-bottom: 0.04rem solid #000;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .navbar2 .sideBar li a {
+  font-size: 1.25rem;
+}
+
+nav .navbar2 .sideBar li:hover {
+  background-color: lightblue;
+>>>>>>> 3fb0d31ff02ba213cabb10a962a937973bfc7104
 }
 
 @media only screen and (min-width: 768px) {
@@ -137,8 +183,20 @@ nav .sidebar .treatmentItem .treatmentsMenu .treatmentsMenuItem {
   nav .picContainer {
     height: 2.5rem;
   }
+<<<<<<< HEAD
   nav .sidebar {
     top: 4.5rem;
+=======
+  nav .navbar2 {
+    width: 50%;
+    top: 4.5rem;
+  }
+  nav .navbar2 .sideBar li {
+    padding: 1.5krtrem 0rem;
+  }
+  nav .navbar2 .sideBar li a {
+    font-size: 1.5rem;
+>>>>>>> 3fb0d31ff02ba213cabb10a962a937973bfc7104
   }
 }
 
@@ -170,6 +228,9 @@ nav .sidebar .treatmentItem .treatmentsMenu .treatmentsMenuItem {
   }
   nav ul.list,
   nav div.end {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -183,6 +244,7 @@ nav .sidebar .treatmentItem .treatmentsMenu .treatmentsMenuItem {
   }
   nav ul.list li,
   nav div.end li {
+<<<<<<< HEAD
     position: relative;
     margin: 0 1rem;
   }
@@ -223,6 +285,17 @@ nav .sidebar .treatmentItem .treatmentsMenu .treatmentsMenuItem {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+=======
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+>>>>>>> 3fb0d31ff02ba213cabb10a962a937973bfc7104
   }
   nav div.end button {
     color: #021433;
@@ -235,15 +308,34 @@ nav .sidebar .treatmentItem .treatmentsMenu .treatmentsMenuItem {
     font-weight: 600;
     margin: 0 0.4rem;
   }
+  nav div.end :nth-child(odd) {
+    color: #021433;
+    background-color: white;
+  }
+  nav div.end :nth-child(odd):hover {
+    background-color: #021433;
+    color: #fff;
+  }
   nav div.end #quoteButton {
     background-color: #021433;
   }
+<<<<<<< HEAD
   nav div.end #tvastraPlusButton {
     background-color: #3b7abd;
   }
   nav div.end .profile {
     margin-left: 1.5rem;
     position: relative;
+=======
+  nav div.end #quoteButton:hover {
+    background-color: white;
+    color: #021433;
+  }
+  nav ul.list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+>>>>>>> 3fb0d31ff02ba213cabb10a962a937973bfc7104
   }
   nav div.end .profile .userName {
     color: #021433;
